@@ -6,18 +6,16 @@ import org.orbitmvi.orbit.ContainerHost
 
 interface HomeContract {
 
-    interface ViewModel : ContainerHost<UiState.UIState, SideEffect>{
+    interface ViewModel : ContainerHost<UIState, SideEffect> {
         fun onEventDispatcher(intent: Intent)
     }
 
     interface SideEffect {
-        object Massage: UiState
+        object Massage : SideEffect
     }
 
-    interface UiState {
-        data class UIState(val cardList: ArrayList<GetCard>, val myHistory: ArrayList<MyHistory>)
 
-    }
+    data class UIState(val cardList: ArrayList<GetCard>, val myHistory: ArrayList<MyHistory>)
 
     interface Intent {
 
