@@ -1,17 +1,17 @@
-package com.example.democomposeproject.presintation.home
+package com.example.democomposeproject.ui.presintation.home
 
-import com.example.democomposeproject.data.requase.GetCard
-import com.example.democomposeproject.data.requase.MyHistory
+import com.example.democomposeproject.ui.data.requase.GetCard
+import com.example.democomposeproject.ui.data.requase.MyHistory
 import org.orbitmvi.orbit.ContainerHost
 
 interface HomeContract {
 
-    interface ViewModel : ContainerHost<UiState.UIState,SideEffect>{
+    interface ViewModel : ContainerHost<UiState.UIState, SideEffect>{
         fun onEventDispatcher(intent: Intent)
     }
 
     interface SideEffect {
-        object Massage:UiState
+        object Massage: UiState
     }
 
     interface UiState {

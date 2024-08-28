@@ -1,7 +1,8 @@
-package com.example.democomposeproject.presintation.home
+package com.example.democomposeproject.ui.presintation.home
 
 import androidx.lifecycle.ViewModel
-import com.example.democomposeproject.domain.AppRepositoryImpl
+import com.example.democomposeproject.ui.domain.AppRepositoryImpl
+import com.example.democomposeproject.ui.presintation.home.HomeContract
 import org.orbitmvi.orbit.viewmodel.container
 
 

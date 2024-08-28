@@ -1,7 +1,6 @@
-package com.example.democomposeproject.presintation.home
+package com.example.democomposeproject.ui.presintation.home
 
 import android.util.Log
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -11,10 +10,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.hilt.getViewModel
-import com.example.democomposeproject.presintation.utils.CardItem
-import com.example.democomposeproject.presintation.utils.getMyHistory
-import org.orbitmvi.orbit.compose.collectAsState
-import kotlin.math.log
+import com.example.simple.ui.presintation.utils.CardItem
+import com.example.simple.ui.presintation.utils.getMyHistory
 
 
 class HomeScreen : Screen {

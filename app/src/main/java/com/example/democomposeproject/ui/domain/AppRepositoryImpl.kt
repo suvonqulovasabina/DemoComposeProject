@@ -1,16 +1,7 @@
-package com.example.democomposeproject.domain
+package com.example.democomposeproject.ui.domain
 
-import com.example.democomposeproject.data.requase.GetCard
-import com.example.democomposeproject.data.requase.MyHistory
-import com.example.democomposeproject.domain.AppRepository
-
-import kotlinx.coroutines.channels.awaitClose
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flow
-
-import javax.inject.Inject
+import com.example.democomposeproject.ui.data.requase.GetCard
+import com.example.democomposeproject.ui.data.requase.MyHistory
 
 class AppRepositoryImpl  : AppRepository {
     private var cardList = ArrayList<GetCard>()

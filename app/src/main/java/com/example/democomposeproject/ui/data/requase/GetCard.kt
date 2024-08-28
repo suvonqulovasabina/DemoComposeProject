@@ -1,4 +1,4 @@
-package com.example.democomposeproject.data.requase
+package com.example.democomposeproject.ui.data.requase
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
