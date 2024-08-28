@@ -2,6 +2,7 @@ package com.example.democomposeproject.ui.domain
 
 import com.example.democomposeproject.ui.data.requase.GetCard
 import com.example.democomposeproject.ui.data.requase.MyHistory
+import com.example.democomposeproject.ui.domain.AppRepository
 
 class AppRepositoryImpl  : AppRepository {
     private var cardList = ArrayList<GetCard>()

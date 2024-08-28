@@ -10,8 +10,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.hilt.getViewModel
-import com.example.simple.ui.presintation.utils.CardItem
-import com.example.simple.ui.presintation.utils.getMyHistory
+import com.example.democomposeproject.presintation.utils.CardItem
+import com.example.democomposeproject.presintation.utils.getMyHistory
 
 
 class HomeScreen : Screen {
