@@ -1,7 +1,7 @@
 package com.example.democomposeproject.ui.presintation.home
 
-import com.example.democomposeproject.ui.data.requase.GetCard
-import com.example.democomposeproject.ui.data.requase.MyHistory
+import com.example.democomposeproject.ui.data.local.GetCard
+import com.example.democomposeproject.ui.data.local.MyHistory
 import org.orbitmvi.orbit.ContainerHost
 
 interface HomeContract {

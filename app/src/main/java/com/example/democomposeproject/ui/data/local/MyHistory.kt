@@ -1,4 +1,4 @@
-package com.example.democomposeproject.ui.data.requase
+package com.example.democomposeproject.ui.data.local
 
 data class MyHistory(
     val name: String,

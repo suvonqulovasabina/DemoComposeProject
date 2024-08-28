@@ -21,7 +21,6 @@ import cafe.adriel.voyager.hilt.getViewModel
 import com.example.democomposeproject.R
 import com.example.democomposeproject.ui.presintation.utils.CardItem
 import com.example.democomposeproject.ui.presintation.utils.HistoryItem
-import com.example.democomposeproject.ui.presintation.utils.getMyHistory
 import org.orbitmvi.orbit.compose.collectAsState
 
 
@@ -47,7 +46,6 @@ fun HomeScreenUI(
             .background(Color(0xFF988686))
     ) {
 
-        
 
         item {
 
@@ -55,7 +53,7 @@ fun HomeScreenUI(
                 painter = painterResource(id = R.drawable.img),
                 contentDescription = "My Image Description",
                 modifier = Modifier.fillMaxWidth(),
-                contentScale = ContentScale.Crop 
+                contentScale = ContentScale.Crop
             )
         }
 
@@ -81,34 +79,34 @@ fun HomeScreenUI(
     }
 }
 
-    /*
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(color = Color(0xFFCDDC39))
-                .verticalScroll(scrollState)
+/*
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color(0xFFCDDC39))
+            .verticalScroll(scrollState)
+    ) {
+        // LazyRow for cardList
+        LazyRow(
+            modifier = Modifier.fillMaxWidth()
         ) {
-            // LazyRow for cardList
-            LazyRow(
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                items(uiState.cardList) { card ->
-                    CardItem(getCard = card)
-                }
+            items(uiState.cardList) { card ->
+                CardItem(getCard = card)
             }
+        }
 
-            // Spacer to separate LazyRow from LazyColumn
-            Spacer(modifier = Modifier.height(16.dp))
+        // Spacer to separate LazyRow from LazyColumn
+        Spacer(modifier = Modifier.height(16.dp))
 
-            // LazyColumn for myHistory
-            LazyColumn(
-                modifier = Modifier.fillMaxSize()
-            ) {
-                items(uiState.myHistory) { historyItem ->
-                    getMyHistory(myHistory = historyItem)
-                }
+        // LazyColumn for myHistory
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            items(uiState.myHistory) { historyItem ->
+                getMyHistory(myHistory = historyItem)
             }
-        }*/
+        }
+    }*/
 
 //    LazyColumn(modifier = Modifier
 //        .fillMaxSize()

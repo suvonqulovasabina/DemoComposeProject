@@ -1,13 +1,12 @@
 package com.example.democomposeproject.ui.domain
 
-import com.example.democomposeproject.ui.data.requase.GetCard
-import com.example.democomposeproject.ui.data.requase.MyHistory
-import com.example.democomposeproject.ui.domain.AppRepository
+import com.example.democomposeproject.ui.data.local.GetCard
+import com.example.democomposeproject.ui.data.local.MyHistory
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class AppRepositoryImpl @Inject constructor()  : AppRepository {
+class AppRepositoryImpl @Inject constructor() : AppRepository {
     private var cardList = ArrayList<GetCard>()
     private var myHistory = ArrayList<MyHistory>()
 
