@@ -1,8 +1,6 @@
-package com.example.democomposeproject.data.requase
+package com.example.democomposeproject.ui.data.local
 
 data class MyHistory(
     val name: String,
-
     val amount: Int,
-
 )

@@ -1,20 +1,13 @@
-package com.example.democomposeproject.domain
+package com.example.democomposeproject.ui.domain
 
-import com.example.democomposeproject.data.requase.GetCard
-import com.example.democomposeproject.data.requase.MyHistory
-import com.example.democomposeproject.domain.AppRepository
-
-import kotlinx.coroutines.channels.awaitClose
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flow
-
+import com.example.democomposeproject.ui.data.local.GetCard
+import com.example.democomposeproject.ui.data.local.MyHistory
 import javax.inject.Inject
+import javax.inject.Singleton
 
-class AppRepositoryImpl  : AppRepository {
+@Singleton
+class AppRepositoryImpl @Inject constructor() : AppRepository {
     private var cardList = ArrayList<GetCard>()
-
     private var myHistory = ArrayList<MyHistory>()
 
 
@@ -22,6 +15,8 @@ class AppRepositoryImpl  : AppRepository {
         cardList.add(GetCard(name = "Humo", amount = 12000))
         cardList.add(GetCard(name = "Jamila", amount = 12000))
         cardList.add(GetCard(name = "Jasur", amount = 12000))
+        cardList.add(GetCard(name = "Javlon", amount = 12000))
+        cardList.add(GetCard(name = "Javlon", amount = 12000))
         cardList.add(GetCard(name = "Javlon", amount = 12000))
         cardList.add(GetCard(name = "Javohir", amount = 12000))
         return cardList
