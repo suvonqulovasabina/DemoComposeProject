@@ -17,8 +17,6 @@ interface HomeContract {
 
     data class UIState(val cardList: ArrayList<GetCard>, val myHistory: ArrayList<MyHistory>)
 
-    interface Intent {
-
-    }
+    interface Intent {}
 
 }

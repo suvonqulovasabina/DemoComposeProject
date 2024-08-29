@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val repo: AppRepository
+    repo: AppRepository
 ) : HomeContract.ViewModel, ViewModel() {
     override val container = container<HomeContract.UIState, HomeContract.SideEffect>(
         HomeContract.UIState(
@@ -17,7 +17,7 @@ class HomeViewModel @Inject constructor(
         )
     )
 
-    override fun onEventDispatcher(intent: HomeContract.Intent) {
-
-    }
+    override fun onEventDispatcher
+                (intent: HomeContract.Intent)
+    {}
 }
