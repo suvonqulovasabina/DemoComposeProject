@@ -10,6 +10,8 @@ import javax.inject.Inject
 class HomeViewModel @Inject constructor(
     repo: AppRepository
 ) : HomeContract.ViewModel, ViewModel() {
+
+
     override val container = container<HomeContract.UIState, HomeContract.SideEffect>(
         HomeContract.UIState(
             cardList = repo.getCard(),

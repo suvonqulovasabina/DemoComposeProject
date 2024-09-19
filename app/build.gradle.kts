@@ -74,8 +74,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
 
-    //ACCOMPANIST -> Pull to refresh
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")
 
     // Voyager Navigator
     val voyagerVersion = "1.0.0"
@@ -92,49 +90,7 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.50")
     kapt("com.google.dagger:hilt-compiler:2.50")
 
-    // Better Logging In Android Using Timber
-    implementation("com.jakewharton.timber:timber:5.0.1")
-
-    // kotlinx.coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    // Gson
-    implementation("com.google.code.gson:gson:2.10.1")
-
-    // Chuck interceptor
-    debugImplementation("com.github.chuckerteam.chucker:library:4.0.0")
-    releaseImplementation("com.github.chuckerteam.chucker:library-no-op:3.5.2")
-
-    // REST API: Adding retrofit to the mainLayer
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3")
-
-    implementation("cafe.adriel.voyager:voyager-tab-navigator:1.0.0")
-
-    implementation("androidx.compose.ui:ui:1.6.7") //
-    implementation("androidx.compose.material:material:1.6.7")
-
-    implementation("androidx.compose.ui:ui-tooling-preview:1.6.7")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.6.7")
-
-
-    // Map
-    implementation(libs.maps.compose)
-    implementation("com.google.android.gms:play-services-maps:19.0.0")
-    implementation(libs.play.services.location)
-    implementation("com.google.maps.android:android-maps-utils:2.4.0")
-
-    implementation("androidx.biometric:biometric:1.2.0-alpha05")
 
 
 
-    val roomVersion = "2.6.1"
-    implementation("androidx.room:room-runtime:$roomVersion")
-    annotationProcessor("androidx.room:room-compiler:$roomVersion")
-    //noinspection KaptUsageInsteadOfKsp
-    kapt("androidx.room:room-compiler:$roomVersion")
-    implementation(kotlin("script-runtime"))
 }

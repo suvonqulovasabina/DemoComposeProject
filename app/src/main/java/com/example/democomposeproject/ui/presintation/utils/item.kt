@@ -20,7 +20,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Colors
+
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -99,7 +99,7 @@ fun HistoryItem(name:String,sum:String) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 8.dp, vertical = 8.dp)
+            .padding(horizontal = 8.dp, vertical = 4.dp)
 
             .height(60.dp)
             .shadow(1.dp, shape = RoundedCornerShape(8.dp))
@@ -115,7 +115,7 @@ fun HistoryItem(name:String,sum:String) {
 
 
 
-            androidx.compose.material.Text(
+            Text(
                 modifier = Modifier
                     .align(Alignment.CenterVertically)
                     .weight(2f),
@@ -123,7 +123,7 @@ fun HistoryItem(name:String,sum:String) {
             )
 
 
-            androidx.compose.material.Text(
+          Text(
                 modifier = Modifier
                     .align(Alignment.CenterVertically)
                     .weight(1f), text = sum
